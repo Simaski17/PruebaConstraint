@@ -37,7 +37,7 @@ public class LoginIngresoVendedorActivity extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btEntrarVendedor:
-                Intent miIntent = new Intent(LoginIngresoVendedorActivity.this, MainActivity.class);
+                Intent miIntent = new Intent(LoginIngresoVendedorActivity.this, IngresoVendedorClienteActivity.class);
                 LoginIngresoVendedorActivity.this.startActivity(miIntent);
                 LoginIngresoVendedorActivity.this.finish();
                 break;

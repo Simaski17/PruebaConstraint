@@ -22,6 +22,10 @@
             android:theme="@style/myTema"
             android:screenOrientation="landscape"></activity>
         <activity
+            android:name=".IngresoVendedorClienteActivity"
+            android:theme="@style/myTema"
+            android:screenOrientation="landscape"></activity>
+        <activity
             android:name=".MainActivity"
             android:theme="@style/myTema"
             android:screenOrientation="landscape"></activity>
