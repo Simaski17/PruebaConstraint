@@ -39,5 +39,10 @@
     <string name="television_internet">Televisi\u00F3n + Internet</string>
     <string name="internet_telefonia">Internet + Telefon\u00EDa fija</string>
 
+    <string name="tvSelecciona_dispositivo"><b>Selecciona un dispositivo</b> para transmitir</string>
+    <string name="title_activity_prueba">PruebaActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
 
 </resources>

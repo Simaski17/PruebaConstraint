@@ -9,8 +9,8 @@
         android:supportsRtl="true"
         android:theme="@style/myTema">
         <activity
-            android:name=".SplashScreenActivity"
-            android:screenOrientation="landscape">
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,16 +19,16 @@
         </activity>
         <activity
             android:name=".LoginIngresoVendedorActivity"
-            android:theme="@style/myTema"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape"
+            android:theme="@style/myTema" />
         <activity
             android:name=".IngresoVendedorClienteActivity"
-            android:theme="@style/myTema"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape"
+            android:theme="@style/myTema" />
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/myTema"
-            android:screenOrientation="landscape"></activity>
+            android:name=".PruebaActivity"
+            android:label="@string/title_activity_prueba" />
+        <activity android:name=".SonyActivity"></activity>
     </application>
 
 </manifest>

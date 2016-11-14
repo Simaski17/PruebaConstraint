@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BlancoEntel"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--Contenedor de Logo Entel, Tabs, logo cliente y logo notificaciones-->
+    <LinearLayout
+        android:id="@+id/linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <!--Contenedor de Logo Entel-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--Logo Entel-->
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="47dp"
+                android:src="@drawable/logoentel"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="35dp"
+                android:id="@+id/logoEntel" />
+        </LinearLayout>
+        <!--Fin Contenedor de Logo Entel-->
+
+        <!--Tabs-->
+        <io.karim.MaterialTabs
+            android:id="@+id/material_tabs"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="7.32"
+            android:background="@color/BlancoEntel"
+            android:textColor="@color/GrisOscuroEntel"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            app:mtIndicatorColor="@android:color/transparent"
+            app:mtMrlRippleColor="@color/BlancoEntel"
+            app:mtTabPaddingLeftRight="15dp"
+            app:mtTextAllCaps="false"
+            app:mtTextColorSelected="@color/NarajoEntel" />
+        <!--Fin Tabs-->
+
+        <!--Contenedor de Icono cliente e icono notificacion-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:orientation="horizontal">
+
+            <!--Contenedor de Icono cliente-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <!--Icono cliente-->
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/iconoclientes"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginTop="45dp"
+                    android:id="@+id/iconoClientes"/>
+
+            </LinearLayout>
+            <!--Fin Contenedor de Icono cliente-->
+
+            <!--Contenedor de Icono notificacion-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <!--Icono notificacion-->
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/icononotificaciones"
+                    android:id="@+id/iconoNotificaciones"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginTop="45dp"/>
+
+            </LinearLayout>
+            <!--Fin Contenedor de Icono notificacion-->
+
+        </LinearLayout>
+        <!--Fin Contenedor de Icono cliente e icono notificacion-->
+
+    </LinearLayout>
+    <!-- FIN Contenedor de Logo Entel, Tabs, logo cliente y logo notificaciones-->
+
+
+    <!--Contenedor ViewPager Servira para cambiar entre Fragments-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_top"
+        android:layout_alignParentEnd="true" />
+    <!--FIN Contenedor ViewPager Servira para cambiar entre Fragments-->
+
+
+    <!--Contenedor de menu cast e iconos de conexion-->
+    <LinearLayout
+        android:id="@+id/linear_menucast"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/NarajoEntel"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <!--Contenedor de menu cast e iconos de conexion-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingRight="180dp">
+
+            <!--Contenedor TEXTO selecciona-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!--Contenedor TEXTO selecciona-->
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvSelecciona_dispositivo"
+                    android:textColor="@color/BlancoEntel"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+            <!--Fin Contenedor TEXTO selecciona-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--FIN Contenedor de menu cast e iconos de conexion-->
+
+
+    <!--Contenedor de boton redondo (FloatingActionButton)-->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:gravity="center"
+        android:paddingEnd="49dp"
+        android:paddingTop="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_cast"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:clickable="true"
+            android:src="@drawable/cast"
+            app:backgroundTint="@color/blanco"
+            app:fabSize="mini"/>
+    </LinearLayout>
+    <!--FIN Contenedor de boton redondo (FloatingActionButton)-->
+
+</RelativeLayout>
